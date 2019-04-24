@@ -34,8 +34,8 @@ class App extends React.Component {
                 <Button drinkName="Chocolade" updateStatus={this.updateStatus} status={this.state.status} disabled={this.state.disabled}/>
                 <Button drinkName="Zwarte thee" updateStatus={this.updateStatus} status={this.state.status} disabled={this.state.disabled}/>
                 <Button drinkName="Earl Gray" updateStatus={this.updateStatus} status={this.state.status} disabled={this.state.disabled}/>
-                <Slider sliderLabel= "Suiker" />
-                <Slider sliderLabel="Melk" />
+                <Slider sliderLabel= "Suiker" disabled={this.state.disabled}/>
+                <Slider sliderLabel="Melk" disabled={this.state.disabled}/>
                 <CoffeeStatus status={this.state.status} drinkName={this.props.drinkName}/>
             </div>
         );
