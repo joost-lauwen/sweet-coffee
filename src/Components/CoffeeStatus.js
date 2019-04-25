@@ -7,10 +7,12 @@ class CoffeeStatus extends React.Component {
     }
 
     render() {
+        const drinkName = this.props.drinkName;
+        const status = this.props.status? "Machine maakt " + drinkName: 'Klaar voor keuze';
         return(
             <div className="status-container">
                 <p className="status">
-                    { this.props.status? "Machine maakt " : 'Klaar voor keuze' }
+                    { status }
                 </p>
             </div>
         )
