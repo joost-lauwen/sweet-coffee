@@ -1,32 +1,18 @@
 import React from 'react';
-// import { sliderChange } from './Components/SweetCoffeeMock';
 
 class Slider extends React.Component {
-    // eslint-disable-next-line no-useless-constructor
-    constructor(props) {
-        super(props);
-        this.state = {
-            sliderValue: 0,
-        }
-    }
-
-    onChange = (e) => {
-        console.log(e.target.value);
-        this.setState({ sliderValue: e.target.value });
-    };
 
     render() {
         return (
             <div className= { this.props.sliderClass }>
-                <p className="slider-text">{ this.props.sliderLabel } ({ this.state.sliderValue }%)</p> <br/>
+                <p className="slider-text">{ this.props.sliderLabel } ({ this.props.value }%)</p> <br/>
                 <input className="slider"
-                       id="slider"
                        type="range"
-                       name="points"
+                       name={this.props.name}
                        min="0"
                        max="100"
-                       value={this.state.sliderValue}
-                       onChange={this.onChange.bind(this)}
+                       value={this.props.value}
+                       onChange={this.props.onChange}
                        disabled={this.props.disabled}
                 />
             </div>

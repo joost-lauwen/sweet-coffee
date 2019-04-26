@@ -45,7 +45,6 @@ body {
 }
 
 .slider-text {
-    /*float: left;*/
     margin: 10px;
 }
 
@@ -57,7 +56,6 @@ body {
     width: 90%;
     margin: 0 5%;
     height: 20px;
-    /*margin: 0 5px 0 15px;*/
 }
 
 .Right {
@@ -66,4 +64,12 @@ body {
 
 .status-container {
     margin: 10px;
+}
+
+.error-message {
+    background-color: red;
+    text-align: center;
+    z-index: 7;
+    color: white;
+    position: absolute;
 }
