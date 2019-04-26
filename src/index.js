@@ -12,7 +12,7 @@ class App extends React.Component {
         this.state = {
             status: false,
             drinkName: false,
-            disabled: false
+            disabled: false,
         };
         this.updateStatus = this.updateStatus.bind(this);
     }
